@@ -1,6 +1,7 @@
 # Учебный проект «Барбершоп»
 
 * Студент: [Алексей Рыбин](https://up.htmlacademy.ru/htmlcss/17/user/47219).
+* Наставник: [Олег Зубов](https://up.htmlacademy.ru/htmlcss/17/user/42701).
 
 ---
 
