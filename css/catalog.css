@@ -1,4 +1,6 @@
-body {
+html, body {
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   line-height: 24px;
   color: #000;
@@ -6,12 +8,71 @@ body {
   font-style: 'PT Sans Narrow';
 }
 
-.h1 {
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-header {
+  outline: 2px solid yellow;
+}
+
+.wrapper {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  outline: 2px solid #999;
+}
+
+.logo {
+  float: left;
+  width: 140px;
+  margin-right: 20px;
+  min-height: 70px;
+  outline: 2px solid red;
+}
+
+.main-navigation {
+  float: left;
+  width: 540px;
+  min-height: 70px;
+  outline: 2px solid red;
+}
+
+.main-navigation li {
+  display: inline-block;
+}
+
+.user-block {
+  float: right;
+  width: 140px;
+  min-height: 70px;
+  outline: 2px solid red;
+}
+
+main h1 {
+  margin-top: 56px;
   font-size: 30px;
   line-height: 42px;
   color: #000;
   font-weight: 700;
   font-style: 'PT Sans Narrow';
+  outline: 2px solid black;
+}
+
+.breadcrumbs ul {
+  margin-top: 22px;
+  margin-bottom: 45px; 
+  padding-left: 0px;
+}
+
+.breadcrumbs li {
+  display: inline-block;
+}
+
+form {
+  outline: 2px solid blue;
 }
 
 .form-title {
@@ -20,4 +81,83 @@ body {
   color: #f7f4f1;
   font-weight: 700;
   font-style: 'PT Sans Narrow';
+}
+
+fieldset {
+  border: none;
+}
+
+main form {
+  float: left;
+  width: 220px;
+}
+
+main .item-list {
+	width: 700px;
+  outline: 2px solid red;
+}
+
+.items-list {
+  float: right;
+  width: 700px;
+  outline: 2px solid green;
+}
+
+.item {
+  float: left;
+  width: 220px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  outline: 2px solid orange;
+}
+
+.item:nth-child(3n+3) {
+  margin-right: 0;
+}
+
+.pages-navigation {
+  clear: both;
+  padding-left: 0px;
+  margin: 0;
+}
+
+.pages-navigation li {
+  display: inline-block;
+  list-style: none;
+}
+
+.pages-navigation a {
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  outline: 2px solid yellow; 
+}
+
+.main-footer {
+  outline: 2px solid green;
+}
+
+.footer-contacts {
+  float: left;
+  width: 320px;
+  margin-right: 60px;
+  min-height: 90px;
+  outline: 2px solid red;
+}
+
+.footer-social {
+  float: left;
+  width: 320px;
+  margin-right: 60px;
+  min-height: 90px;
+  outline: 2px solid yellow;
+}
+
+.footer-copyright {
+  float: right;
+  width: 180px;
+  min-height: 90px;
+  outline: 2px solid blueviolet;   
 }
