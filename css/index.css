@@ -21,6 +21,7 @@ body {
 
 .wrapper {
   width: 940px;
+  margin: 0 auto;
   padding: 0 10px;
   outline: 2px solid #666;
 }
@@ -28,7 +29,7 @@ body {
 .main-navigation {
   float: left;
   width: 780px;
-  
+  min-height: 70px;
   outline: 2px solid red;
 }
 
@@ -53,12 +54,13 @@ body {
 
 .features {
   margin-bottom: 80px;
-}
+} 
 
 .features-item {
   float: left;
   width: 300px;
   margin-right: 20px;
+  outline: 2px solid red;
 }
 
 .features-item:last-child {
@@ -88,10 +90,14 @@ body {
 
 .index-content-right {
   float: right;
+  width: 300px;
   min-height: 330px;
   outline: 2px solid green;
 }
 
+.gallery-content {
+  margin: 0;
+}
 .index-content-title {
   font-size: 30px;
   line-height: 42px;
