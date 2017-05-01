@@ -217,7 +217,6 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
-  font-family: "PT Sans", "Arial", sans-serif;
   vertical-align: top;
   text-align: center;
   color: #fff;
@@ -230,8 +229,8 @@ body {
   cursor: pointer;
 }
 
-.btn a:nth-child(3n) {
-  margin-right: 0;
+.btn a {
+  font: inherit;
 }
 
 .btn:hover,
@@ -278,6 +277,7 @@ body {
 .gallery .btn {
   position: absolute;
   bottom: 0;
+  font: inherit;
 
   width: 140px;
   margin: 0;
@@ -317,6 +317,7 @@ body {
 .appointment-form .btn {
   clear: both;
   width: 100%;
+  font: inherit;
 }
 
 .main-footer {
