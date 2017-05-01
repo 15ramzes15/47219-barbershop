@@ -8,7 +8,7 @@ html, body {
   color: #fff;
   text-transform: uppercase;
 
-  background: #fff;
+  background: #f8f5f2 url("../img/main-bg");
 }
 
 .clearfix::after {
@@ -47,6 +47,7 @@ html, body {
 .main-navigation {
   float: left;
   max-width: 540px;
+  
 }
 
 .main-navigation ul {
@@ -77,6 +78,21 @@ html, body {
 
 .main-navigation a:hover {
   background-color: #242424;
+}
+
+.main-navigation li:nth-child(4) {
+  position: relative;
+}
+
+.main-navigation li:nth-child(4)::after {
+  content: "";
+  position: absolute;
+  top: 66px;
+  left: 18px;
+
+  width: 60px;
+  height: 4px;
+  background-color: #fff;
 }
 
 .user-block {
@@ -145,10 +161,12 @@ main h1 {
   vertical-align: top;
   color: #000;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .breadcrumbs a:last-child {
   padding-right: 0;
+  cursor: default;
 }
 
 .breadcrumbs a::after {
@@ -243,6 +261,10 @@ input[type="checkbox"]:checked + label::after {
   background-position: -12px -52px;
 }
 
+input[type="checkbox"] + label:hover {
+  color: #663d15;
+}
+
 input[type="radio"] {
   display: none;
 }
@@ -268,8 +290,29 @@ input[type="radio"] + label::before {
   left: 0;
 }
 
-input[type="checkbox"]:checked + label::after {
-  
+input[type="radio"]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-image: url("../img/check-radio.png");
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 12px;
+}
+
+input[type="radio"] + label:hover {
+  color: #663d15;
+}
+
+button[type="submit"] {
+  border:none;
+  padding: 15px 30px;
+  margin-top: 30px;
+  background-color: #000;
+  font: inherit;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 main .item-list {
@@ -280,7 +323,6 @@ main .item-list {
 .items-list {
   float: right;
   width: 700px;
-  outline: 2px solid green;
 }
 
 .item {
@@ -288,56 +330,213 @@ main .item-list {
   width: 220px;
   margin-right: 20px;
   margin-bottom: 20px;
-  outline: 2px solid orange;
+  padding-bottom: 16px;
+  box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
 }
 
 .item:nth-child(3n+3) {
   margin-right: 0;
 }
 
-.pages-navigation {
-  clear: both;
-  padding-left: 0px;
-  margin: 0;
+.item-category {
+  display: inline-block;
+  padding: 0 15px;
+  padding-right: 25px;
+  font-style: "PT Sans Narrow";
+  color: #000;
+  text-decoration: none;
 }
 
-.pages-navigation li {
+.item-title {
   display: inline-block;
-  list-style: none;
+  padding: 0 15px;
+  margin-bottom: 15px;
+  font-style: "PT Sans Narrow";
+  color: #000;
+  text-decoration: none;
+}
+
+.price-buy {
+  font-size: 0;
+}
+
+.price {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 15px; 
+  padding: 15px 25px;
+  background-color: #e5e5e5;
+  color: #000;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.price-buy a {
+  display: inline-block; 
+  vertical-align: top;
+  padding: 15px 22px;
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.price-buy a:hover,
+.price-buy a:checked {
+  background-color: #663d15;
+}
+
+.pages-navigation {
+  font-size: 0;
 }
 
 .pages-navigation a {
   display: inline-block;
-  width: 43px;
-  height: 43px;
+  vertical-align: top;
+  width: 11px;
+  height: 19px;
   margin-top: 40px;
   margin-bottom: 50px;
-  outline: 2px solid yellow; 
+  margin-right: 7px;
+  padding: 15px 18px;
+
+  background-color: #000;
+
+  font-size: 14px; 
+  line-height: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.pages-navigation .selected-page {
+  background-color: #fff;
+  color: #000;
+}
+
+.pages-navigation a:hover {
+  background-color: #663d15;
+}
+
+.pages-navigation .selected-page:hover {
+  background-color: #fff;
 }
 
 .main-footer {
-  outline: 2px solid green;
+  margin-top: 65px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  min-width: 190px;
+  outline: 2px solid black;
+
+  color: #fff;
+
+  background: #252525 url("../img/pattern-black.png");
 }
 
 .footer-contacts {
   float: left;
   width: 320px;
   margin-right: 60px;
+  
   min-height: 90px;
-  outline: 2px solid red;
+}
+
+.footer-contacts a {
+  color: #fff;
+}
+
+.footer-contacts a:hover {
+  text-decoration: none;
 }
 
 .footer-social {
   float: left;
-  width: 320px;
-  margin-right: 60px;
+  width: 180px;
   min-height: 90px;
-  outline: 2px solid yellow;
+  text-align: center;
+}
+
+.footer-social p {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.social-btn {
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  margin: 0 2px;
+
+  background: #000000 url("../img/sprite.png") no-repeat center;
+
+  font-size: 0;
+  vertical-align: top;
+  text-decoration: none;
+
+  transition: 
+  background-position 0.5s,
+  background-color 0.5s;
+}
+
+.social-btn:hover {
+  background-color: #fff;
+}
+
+.social-btn-vk {
+  background-position: -3px -256px;
+}
+
+.social-btn-fb {
+  background-position: 3px -79px;
+}
+
+.social-btn-inst {
+  background-position: 0px -170px;
+}
+
+.social-btn-vk:hover {
+  background-position: -3px -296px;
+}
+
+.social-btn-fb:hover {
+  background-position: 3px -125px;
+}
+
+.social-btn-inst:hover {
+  background-position: 0px -215px;
 }
 
 .footer-copyright {
   float: right;
-  width: 180px;
-  min-height: 90px;
-  outline: 2px solid blueviolet;   
+  max-width: 180px;
+}
+
+.footer-copyright p {
+  margin: 0;
+  margin-bottom: 15px;
+
+  text-align: center;
+}
+
+.footer-copyright .btn {
+  display: inline-block;
+  padding: 10px 33px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  vertical-align: top;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-copyright .btn:hover {
+  color: #000000;
+
+  background-color: #ffffff;
 }

@@ -418,6 +418,7 @@ body {
 
 .footer-copyright .btn {
   margin-right: 0;
+  font-family: inherit;
 }
 
 .footer-copyright .btn:hover {

@@ -3,8 +3,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Барбершоп Набор для путешествий «Baxter of California»</title>
-		<link rel="stylesheet" href="css/catalog-item.css">
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/catalog-item.css">
 	</head>
 	<body>
 		<header class="main-header">
@@ -40,20 +41,10 @@
 			<div class="wrapper clearfix">
 				<h1>Набор для путешествий «Baxter of California»</h1>
 				<div class="breadcrumbs">
-					<ul>
-						<li>
-							<a href="#">Главная</a>
-						</li>
-						<li>
-							<a href="#">Магазин</a>
-						</li>
-						<li>
-							<a href="#">Средства для ухода</a>
-						</li>
-						<li>
-							<a>Набор для путешествий «Baxter of California»</a>
-						</li>
-					</ul>
+					<a href="#">Главная</a>
+					<a href="#">Магазин</a>
+					<a href="#">Средства для ухода</a>
+					<a class="active">Набор для путешествий «Baxter of California»</a>
 				</div>
 				<figure class="gallery">
 					<a href="#"><img class="main-pic" src="img/item-pic1.jpg" width="460" height="498" alt="Дополнительная картинка"></a>
@@ -71,10 +62,12 @@
 					<span class="stock">Есть в наличии</span>
 					<span class="vendor">Артикул: dexter-ae</span>
 					<p>Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
-					<span class="price">2 900 РУБ.</span>
-					<a class="buy-btn" href="#">Купить</a>
+					<div class="price-buy">
+						<span class="price">2 900 РУБ.</span>
+						<a href="#">Купить</a>
+					</div>
 					<b class="article-title">В набор входят:</b>
-					<ul>
+					<ul class="kit">
 						<li>
 							Средство для умывания (50 мл)
 						</li>
