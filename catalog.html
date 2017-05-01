@@ -41,60 +41,34 @@
 			<div class="wrapper clearfix">
 				<h1>Средства для ухода</h1>
 				<div class="breadcrumbs">
-					<ul>
-						<li>
-							<a href="#">Главная</a>
-						</li>
-						<li>
-							<a href="#">Магазин</a>
-						</li>
-						<li>
-							<a>Средства для ухода</a>
-						</li>
-					</ul>
+					<a href="#">Главная</a>
+					<a href="#">Магазин</a>
+					<a class="active">Средства для ухода</a>
 				</div>
 				<form action="" method="post">
 					<fieldset class="items-options">
 						<legend class="form-title">Производители:</legend>
-						<div class="checkbox">
 							<input type="checkbox" name="value1" id="option1" checked="checked">
 							<label for="option1">Baxter of California</label>
-						</div>
-						<div class="checkbox">
 							<input type="checkbox" name="value2" id="option2">
-							<label for="option2">Mr Natty</label>
-						</div>
-						<div class="checkbox">
+							<label for="option2">Mr Natty</label>						
 							<input type="checkbox" name="value3" id="option3" checked="checked">
 							<label for="option3">Suavecito</label>
-						</div>
-						<div class="checkbox">
 							<input type="checkbox" name="value4" id="option4">
 							<label for="option4">Malin+Goetz</label>
-						</div>
-						<div class="checkbox"	>
 							<input type="checkbox" name="value5" id="option5">
 							<label for="option5">Murray’s</label>	
-						<div>
-						<div class="checkbox">
 							<input type="checkbox" name="value6" id="option6" checked="checked">
 							<label for="option6">American Crew</label>	
-						</div>
 					</fieldset>
-					<fieldset>	
-						<legend class="form-title">Группы товаров:</legend>
-						<div class="radio">
-							<input type="radio" name="goodies-group" id="option1">
-							<label for="option1">Бритвенные принадлежности</label>
-						</div>
-						<div class="radio">
-							<input type="radio" name="goodies-group" id="option2" checked="checked">
-							<label for="option2">Средства для ухода</label>
-						</div>
-						<div class="radio">    
-							<input type="radio" name="goodies-group" id="option3">
-							<label for="option3">Аксессуары</label>
-						</div>
+					<fieldset class="items-options"> 	
+						<legend class="form-title">Группы товаров:</legend>					
+							<input type="radio" name="goodies-group" id="option7">
+							<label for="option7">Бритвенные <br> принадлежности</label>
+							<input type="radio" name="goodies-group" id="option8" checked="checked">
+							<label for="option8">Средства для ухода</label>   
+							<input type="radio" name="goodies-group" id="option9">
+							<label for="option9">Аксессуары</label>
 						<button type="submit">Показать</button>
 					</fieldset>
 				</form>

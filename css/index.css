@@ -110,7 +110,6 @@ body {
   height: 204px;
   margin: 0 auto;
   margin-bottom: 25px;
-  outline: 2px solid black; 
 }
 
 .index-logo img {
@@ -229,6 +228,10 @@ body {
   background-color: #000;
   border: none;
   cursor: pointer;
+}
+
+.btn a:nth-child(3n) {
+  margin-right: 0;
 }
 
 .btn:hover,
